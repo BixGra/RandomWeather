@@ -42,13 +42,14 @@ def get_render(city, country, population, t_min, t_max, weathercode):
     <style>
         body {{
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: rgba(255, 255, 255, 1) 0 0 30px, rgba(255, 255, 255, 1) 0 0 30px, rgba(255, 255, 255, 1) 0 0 30px;
         }}
 
         .widget {{
             position: relative;
             display: flex;
             height: 400px;
-            width: 400px;
+            width: 500px;
         }}
 
         .image {{
