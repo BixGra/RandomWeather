@@ -102,7 +102,7 @@ def get_render(city, country, population, t_min, t_max, weathercode):
             border-radius: 25px;
         }}
     </style>
-    <title>test</title>
+    <title>RandomWeather</title>
 </head>
 <body>
     <div class="widget">
