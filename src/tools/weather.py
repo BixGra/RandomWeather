@@ -42,13 +42,13 @@ def get_render(city, country, population, t_min, t_max, weathercode):
     <style>
         body {{
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            text-shadow: rgba(255, 255, 255, 1) 0 0 30px, rgba(255, 255, 255, 1) 0 0 30px, rgba(255, 255, 255, 1) 0 0 30px;
+            text-shadow: rgba(255, 255, 255, 1) 0 0 30px;
         }}
 
         .widget {{
             position: relative;
             display: flex;
-            height: 400px;
+            height: 300px;
             width: 500px;
         }}
 
@@ -100,7 +100,6 @@ def get_render(city, country, population, t_min, t_max, weathercode):
             width: 100%;
             background: linear-gradient(135deg, rgba({gradient["start"]},1), rgba({gradient["end"]},1) 100%);
             border-radius: 25px;
-            -webkit-mask-image: -webkit-gradient(linear, right 50%, right 70%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
         }}
     </style>
     <title>test</title>
@@ -113,7 +112,7 @@ def get_render(city, country, population, t_min, t_max, weathercode):
             <img src="./src/data/emojis/{WeatherImage[weathercode].value}" alt="{WeatherImage[weathercode].value}">
         </div>
         <div class="temperature">
-            <p>{t_min}°/{t_max}°</p>
+            <p>{t_min}°/{t_max}°C</p>
         </div>
         <div class="city">
             <p>{city}</p>
