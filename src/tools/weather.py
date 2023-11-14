@@ -12,10 +12,10 @@ def get_city():
 
 # TODO use wind
 def get_data(lat, lng):
-    r = requests.get(
+    response = requests.get(
         f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lng}&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max,winddirection_10m_dominant&forecast_days=1&timezone=Europe%2FParis"
     )
-    daily = r.json()["daily"]
+    daily = response.json()["daily"]
     return {
         "t_min": int(daily["temperature_2m_min"][0]),
         "t_max": int(daily["temperature_2m_max"][0]),
