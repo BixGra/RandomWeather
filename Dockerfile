@@ -4,7 +4,7 @@ WORKDIR /etc/RandomWeather
 
 COPY . /etc/RandomWeather/.
 
-RUN  pip install --upgrade pip && pip --no-cache-dir install -r /etc/RandomWeather/requirements.txt
+RUN pip install --upgrade pip && pip --no-cache-dir install -r /etc/RandomWeather/requirements.txt
 
 ENV PYTHONPATH $PYTHONPATH:$PATH:/etc/RandomWeather/src/
 
