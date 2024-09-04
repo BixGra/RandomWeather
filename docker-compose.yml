@@ -1,0 +1,14 @@
+version: "3.1"
+
+services:
+  randomweather:
+    image: randomweather:latest
+    container_name: randomweather
+    ports:
+      - "8000:8000"
+    networks:
+      - sandbixproxy_mynet
+
+networks:
+  sandbixproxy_mynet:
+    external: true
