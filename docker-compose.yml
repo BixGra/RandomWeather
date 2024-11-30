@@ -4,8 +4,6 @@ services:
   randomweather:
     image: randomweather:latest
     container_name: randomweather
-    ports:
-      - "8000:8000"
     networks:
       - sandbixproxy_mynet
 
