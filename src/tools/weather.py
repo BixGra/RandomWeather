@@ -43,6 +43,11 @@ def get_render(city, country, population, t_min, t_max, weathercode):
         body {{
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             text-shadow: rgba(255, 255, 255, 1) 0 0 30px;
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }}
 
         .widget {{
@@ -102,7 +107,7 @@ def get_render(city, country, population, t_min, t_max, weathercode):
             border-radius: 25px;
         }}
     </style>
-    <title>RandomWeather</title>
+    <title>Sandbix - RandomWeather</title>
 </head>
 <body>
     <div class="widget">
